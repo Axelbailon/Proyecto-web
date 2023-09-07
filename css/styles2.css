@@ -1,3 +1,13 @@
-.body {
-    background: url(https://img.freepik.com/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_53876-135923.jpg?w=740&t=st=1694053117~exp=1694053717~hmac=87327f58bc742d68bd869ce7e7176e1f64639bf086c88d826f60a5233184f432);
+.conteiner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container {
+   position: relative;
+}
+.item {
+   position: absolute;
+   top: 50%;
+   
 }

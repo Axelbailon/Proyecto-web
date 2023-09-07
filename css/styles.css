@@ -6,3 +6,16 @@ body {
    justify-content: center;
    align-items: center;
    }
+.conteiner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container {
+   position: relative;
+}
+.item {
+   position: absolute;
+   top: 50%;
+   
+}
