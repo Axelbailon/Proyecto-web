@@ -65,7 +65,7 @@ ul li .content {
     position: absolute;
     bottom: -100%;
     left: 0;
-    height: 20%;
+    height: 30%;
     width: 100%;
     padding: 20px;
     background-color: rgba(0,0,0,0.4);
@@ -78,7 +78,7 @@ ul li .content h2 {
     margin-bottom: 5px;
 }
 ul li .content p {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 0px;
 }

@@ -1,5 +1,5 @@
 body {
-   background-color: rgb(255, 255, 255);
+   background-color: rgba(214, 214, 214, 0);
 }
 .conteiner {
    display: flex;
@@ -10,12 +10,5 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-}
-.container {
-   position: relative;
-}
-.item {
-   position: absolute;
-   top: 50%;
-   
+   align-items: center;
 }
