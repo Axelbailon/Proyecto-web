@@ -1,5 +1,5 @@
 body {
-   background-color: rgba(255, 255, 255, 0);
+   background-color: aliceblue;
 }
 .conteiner {
    display: flex;
@@ -17,9 +17,4 @@ body {
    align-items: center;
    justify-content: center;
 }
-h1 {
-   display: inline-block;
-   background: linear-gradient(rgb(139, 6, 151),rgb(6, 42, 143));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
+
