@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HTML+CSS</title>
+    <title>Productos</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -15,7 +15,7 @@
     </div>
     
     <div class="container">
-      <table class="table">
+      <table class="table" id="TbVentas">
         <thead>
           <tr>
             <th scope="col">Seccion</th>
@@ -29,36 +29,38 @@
         <tbody class="table-group-divider">
           <tr>
             <th scope="row">Hotel x noche</th>
-            <td>$25</td>
-            <td>$30</td>
-            <td>$18</td>
-            <td>$50</td>
-            <td>$15</td>
+            <td>25</td>
+            <td>30</td>
+            <td>18</td>
+            <td>50</td>
+            <td>15</td>
           </tr>
           <tr>
             <th scope="row">Comidas</th>
-            <td>$84</td>
-            <td>$120</td>
-            <td>$55</td>
-            <td>$110</td>
-            <td>$40</td>
+            <td>84</td>
+            <td>120</td>
+            <td>55</td>
+            <td>110</td>
+            <td>40</td>
           </tr>
           <tr>
             <th scope="row">Transporte ida-vuelta</th>
-            <td>$150</td>
-            <td>$105</td>
-            <td>$120</td>
-            <td>$100</td>
-            <td>$80</td>
+            <td>150</td>
+            <td>105</td>
+            <td>120</td>
+            <td>100</td>
+            <td>80</td>
           </tr>
+          <tfoot>
           <tr>
             <th scope="row">Total precios</th>
-            <td>$259</td>
-            <td>$255</td>
-            <td>$193</td>
-            <td>$260</td>
-            <td>$135</td>
+            <td id="ventas1"></td>
+            <td id="ventas2"></td>
+            <td id="ventas3"></td>
+            <td id="ventas4"></td>
+            <td id="ventas5"></td>
           </tr>
+        </tfoot>
         </tbody>
       </table>
       <div class="fs-5 text-center">Si necesitas tomarte vacaciones a diferentes paises, consulta con nosotros a nuestras redes sociales</div>
@@ -78,5 +80,26 @@
       </ul>
 
     </footer>
+    <script>
+      var tabla=document.getElementById("TbVentas");
+      var sumA=0,sumB=0,sumC=0,sumD=0,sumE=0;
+
+      for (var i =1; i < tabla.rows.length-1; i++) {
+        sumA=sumA+parseInt(tabla.rows[i].cells[1].innerHTML);
+        sumB=sumB+parseInt(tabla.rows[i].cells[2].innerHTML);
+        sumC=sumC+parseInt(tabla.rows[i].cells[3].innerHTML);
+        sumD=sumD+parseInt(tabla.rows[i].cells[4].innerHTML);
+        sumE=sumE+parseInt(tabla.rows[i].cells[5].innerHTML);
+      }
+
+      document.getElementById("ventas1").innerHTML=sumA;
+      document.getElementById("ventas2").innerHTML=sumB;
+      document.getElementById("ventas3").innerHTML=sumC;
+      document.getElementById("ventas4").innerHTML=sumD;
+      document.getElementById("ventas5").innerHTML=sumE;
+
+
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
